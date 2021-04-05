@@ -1,0 +1,121 @@
+.page-header {
+    margin-top: 0;
+}
+
+pre.message {
+    margin: 0;
+    border: 0;
+    padding-top: 5px;
+    background: inherit;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    word-break: normal;
+    tab-size: 4;
+}
+
+.category-list {
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 40px;
+}
+
+.category-list li {
+    padding: 10px 0px;
+}
+
+.category-list a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.category-list-container {
+    margin-top: 20px;
+}
+
+.category-list small {
+    margin-left: 15px;
+    color: #777;
+}
+
+.category-list em {
+    margin: 5px;
+    color: #777;
+    display: block;
+}
+
+span.colorize {
+    display: inline-block;
+    min-width: 80px;
+    padding: 3px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+td.colorize {
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+.testcase span {
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+    margin: 10px;
+    display: block;
+}
+
+.testcase td, .testcase th {
+    padding: 5px !important;
+    border: 1px solid #eee;
+}
+
+.cheating a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #333;
+}
+
+#comparation_preview th {
+    text-align: center;
+}
+
+#comparation_preview td {
+    border: 0px;
+}
+
+.highlight pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: normal;
+}
+
+.highlight .lineno {
+    font-style: italic;
+    margin-right: 10px;
+    color: #aaa;
+}
+
+.scoreboard-export {
+    margin-bottom: 20px;
+}
+
+.scoreboard-print-details {
+    display: none;
+}
+
+@media print {
+    a[href]:after {
+        content:"" !important;
+    }
+    .page-header, #messagesAlert, .scoreboard-export {
+        display: none;
+    }
+    .scoreboard-print-details {
+        display: block;
+    }
+}
